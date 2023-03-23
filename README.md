@@ -48,7 +48,7 @@ This is partially lutris specific, but you in no way need to use lutris.
    - "3dmigoto-GIMI-for-development.zip" is a development version intended for creating mods which has all features turned on (including the green text at the top and bottom of the screen) but is slower
    - "3dmigoto-GIMI-for-playing-mods.zip" is a version of the program indended for playing mods which has development features turned off (no green text) but is faster
 
-2. Extract 3dmigito folder from the zip file to anywhere you want. Put in home folder or games/mods whereever. This will be a "semi" permanent location to where the 3DM Loader will be and the associated Mods folder. Tip: You should not extract this in your 'Genshin Path prefix' folder, as it could be overwritten by launchers.
+2. Extract 3dmigito folder from the zip file to anywhere you want. Put in home folder or games/mods whereever. This will be a "semi" permanent location to where the 3DM Loader will be and the associated Mods folder. Tip: You should not extract this in your `Genshin Path prefix` folder, as it could be overwritten by launchers or game updates.
 
 3. Depending on the location of your Genshin Impact .exe file, you may need to change this line in the d3dx.ini file to point to your own installation (the Genshin game .exe, not the Genshin launcher .exe - the one you want is usually located in the Genshin Impact Game folder). If changing it to your path doesn't work, try using `target = GenshinImpact.exe`: .
 You should default to `target = GenshinImpact.exe` and only switch to hardcoded z:\ or c:\ paths if you want to tinker. The process should be found by your wine prefix.     
