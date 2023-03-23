@@ -64,7 +64,10 @@ If you have access to the wine runner from your locally installed genshin, click
 Else....you may pick your own Wine Version from the drop down, if it doesnt match the one genshin game uses, your results may vary. (Might work, might have to mess around)     
 You are done here. Press Save on the top right.
 
-3. Double click "3DMigoto Loader.exe" to start the loader, then start up Genshin through the GenshinImpact.exe. If everything is correct so far, 3DMigoto should be injected into the game and you should see a green text overlay (only if using the "for development" version, the "for playing" version does not show the green text):
+5. Select your 3dmigoto in lutris main play and click play on the bottom right. To open your logs click the dropdown next to the play button and select "Show Logs". 
+6. Once it says that 3dm is ready from your d3d11 dll, start up genshin. 
+7. The script logs your say successfully attached 3dm and close. It may not always close and leave log output.
+8. You don't need to do this everytime, from now on, just run genshin, and 3dm will should always be attached. If not, repeat from step 5.
 
 
 ## Installation Instructions (3DMigoto Blender Plugin)
