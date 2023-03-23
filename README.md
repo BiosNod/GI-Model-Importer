@@ -51,7 +51,8 @@ This is partially lutris specific, but you in no way need to use lutris.
 2. Extract 3dmigito folder from the zip file to anywhere you want. Put in home folder or games/mods whereever. This will be a "semi" permanent location to where the 3DM Loader will be and the associated Mods folder. Tip: You should not extract this in your 'Genshin Path prefix' folder, as it could be overwritten by launchers.
 
 3. Depending on the location of your Genshin Impact .exe file, you may need to change this line in the d3dx.ini file to point to your own installation (the Genshin game .exe, not the Genshin launcher .exe - the one you want is usually located in the Genshin Impact Game folder). If changing it to your path doesn't work, try using `target = GenshinImpact.exe`: .
-You should default to `target = GenshinImpact.exe` and only switch to hardcoded z:\ or c:\ paths if you want to tinker. The process should be found by your wine prefix.
+You should default to `target = GenshinImpact.exe` and only switch to hardcoded z:\ or c:\ paths if you want to tinker. The process should be found by your wine prefix.     
+Comment out the line 'require_admin = true'. As it is not needed. Put a ; in front of it.
 
 <img src="https://user-images.githubusercontent.com/107697535/174322200-b1afea95-53f5-4add-be89-698f85503908.png" width="800"/>
 
