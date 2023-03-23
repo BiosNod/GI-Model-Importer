@@ -65,8 +65,8 @@ Else....you may pick your own Wine Version from the drop down, if it doesnt matc
 You are done here. Press Save on the top right.
 
 5. Select your 3dmigoto in lutris main play and click play on the bottom right. To open your logs click the dropdown next to the play button and select "Show Logs". 
-6. Once it says that 3dm is ready from your d3d11 dll, start up genshin. '3DMigoto ready - Now run the game.' 
-7. The script logs willsay successfully attached 3dm and close. It may not always close and leave log output. '3DMigoto loaded :)'
+6. Once it says that 3dm is ready from your d3d11 dll, start up genshin. `3DMigoto ready - Now run the game.` 
+7. The script logs willsay successfully attached 3dm and close. It may not always close and leave log output. `3DMigoto loaded :)`
 8. There are ways to auto run 3dm before starting genshin, but not always reliable. Not including this info here for now.
 
 
