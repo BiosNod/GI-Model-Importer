@@ -15,7 +15,7 @@ For a simple walkthrough of removing a portion of a character mesh using these t
 
 Model files for the importer are located at [GI-Model-Importer-Assets](https://github.com/SilentNightSound/GI-Model-Importer-Assets)
 
-## Installation Instructions (3DMigoto)
+## Installation Instructions (3DMigoto) (Windows)
 
 1. Download a 3dmigoto .zip from [releases](https://github.com/SilentNightSound/GI-Model-Importer/releases) and extract it. I have provided two versions:
    - "3dmigoto-GIMI-for-development.zip" is a development version intended for creating mods which has all features turned on (including the green text at the top and bottom of the screen) but is slower
@@ -40,6 +40,32 @@ Model files for the importer are located at [GI-Model-Importer-Assets](https://g
 ![image](https://user-images.githubusercontent.com/107697535/175611402-c3f600ca-4136-4561-b33a-f4edf6153d1a.png)
 
 &nbsp;
+
+## Installation Instructions (3DMigoto) (Linux w/ Wine/Lutris)
+This is partially lutris specific, but you in no way need to use lutris.
+
+1. Download a 3dmigoto .zip from [releases](https://github.com/SilentNightSound/GI-Model-Importer/releases) and extract it. I have provided two versions:
+   - "3dmigoto-GIMI-for-development.zip" is a development version intended for creating mods which has all features turned on (including the green text at the top and bottom of the screen) but is slower
+   - "3dmigoto-GIMI-for-playing-mods.zip" is a version of the program indended for playing mods which has development features turned off (no green text) but is faster
+
+2. Extract 3dmigito folder from the zip file to anywhere you want. Put in home folder or games/mods whereever. This will be a "semi" permanent location to where the 3DM Loader will be and the associated Mods folder. Tip: You should not extract this in your 'Genshin Path prefix' folder, as it could be overwritten by launchers.
+
+3. Depending on the location of your Genshin Impact .exe file, you may need to change this line in the d3dx.ini file to point to your own installation (the Genshin game .exe, not the Genshin launcher .exe - the one you want is usually located in the Genshin Impact Game folder). If changing it to your path doesn't work, try using `target = GenshinImpact.exe`: .
+You should default to `target = GenshinImpact.exe` and only switch to hardcoded z:\ or c:\ paths if you want to tinker. The process should be found by your wine prefix.
+
+<img src="https://user-images.githubusercontent.com/107697535/174322200-b1afea95-53f5-4add-be89-698f85503908.png" width="800"/>
+
+4. Open lutris and add a "Locally Installed Game". Set the Name to GIMI (or whatever you want), set the Runner to wine. In "Game Options", set the Executable to the 3dmigoto Exe you extracted. Set the working directory to the folder 3dmigoto and your Mods folder resides in.   
+Wine prefix: You have some options, such as using a new prefix, but you can set this to the same prefix path your genshin game is installed in.       
+Prefix Architecture: Auto (default)
+Now head over to runner options....     
+If you have access to the wine runner from your locally installed genshin, click Browse on Custom Wine Executable and choose the wine64 runner that the local genshin install uses.
+Else....you may pick your own Wine Version from the drop down, if it doesnt match the one genshin game uses, your results may vary. (Might work, might have to mess around)     
+You are done here. Press Save on the top right.
+
+3. Double click "3DMigoto Loader.exe" to start the loader, then start up Genshin through the GenshinImpact.exe. If everything is correct so far, 3DMigoto should be injected into the game and you should see a green text overlay (only if using the "for development" version, the "for playing" version does not show the green text):
+
+
 ## Installation Instructions (3DMigoto Blender Plugin)
 
 In order to modify game models, you need to also setup your Blender plugins and environment. The 3DMigoto plugin works with Blender 2.80+
